@@ -17,33 +17,34 @@
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="https://google.com.br" target="_blank">Google</a></li>
-                            
+
             </ul>
         </nav>
     </header>
 
     <section id="sobre"> <!-- Seção principal do site -->
         <h2>Sobre mim</h2>
-        <img src="IMG_20250226_172329.jpg" alt="Imagem de perfil" width="250" height="350" title="Imagem de perfil Karen"> <!-- Imagem de perfil -->
+        <img src="IMG_20250226_172329.jpg" alt="Imagem de perfil" width="250" height="350"
+            title="Imagem de perfil Karen"> <!-- Imagem de perfil -->
 
         <article> <!-- Artigo para descrição pessoal -->
-            <p>Olá! Meu nome é Karen e sou uma desenvolvedora web, adicionado um novo texto.
+            <p>Olá! Meu nome é Karen e sou uma desenvolvedora web.
             </p>
 
         </article>
     </section>
 
-        <aside>
-            <h3>Habilidades</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                </ul>
+    <aside>
+        <h3>Habilidades</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
 
-        </aside>
+    </aside>
 
-        <section id="projetos">
+    <section id="projetos">
 
         <h2>Projetos</h2>
 
@@ -53,19 +54,44 @@
                 Este é o primeiro site que desenvolvi para mostrar minhas habilidades e projetos. Ele é simples, mas
                 estou animada para continuar aprendendo e melhorando minhas habilidades de desenvolvimento web.
             </p>
-            </article>
-        </section> 
+        </article>
+    </section>
 
     <footer>
         <p>© 2026 Karen. Todos os direitos reservados.</p>
+        
         <section id="contato">
+        
             <h2>Contato</h2>
+        
             <p>Tem um projeto em mente? Entre em contato comigo!</p>
-            <address>
-                E-mail: <a href="mailto:karengvogel@gmail.com">karengvogel@gmail.com</a> <br>
-                Telefone: <a href="tel:+5551986090935">(51) 98609-0935</a>
+
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
                 
-            </address>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcament">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea><br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Desejo receber novidades.</label>
+                <br>
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
 
         </section>
     </footer>
